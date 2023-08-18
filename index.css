@@ -94,6 +94,12 @@ button {
   min-width: 0px;
   min-height: 0px;
 }
+.hide {
+  visibility: hidden;
+}
+.reveal {
+  display: inline;
+}
 
 .menu-bar li:first-child ul:nth-child(1) {
   border-right: var(--border);
@@ -161,7 +167,12 @@ button {
   transition: 0.1s ease-in-out;
   box-shadow: var(--shadow);
 }
-
+.closebtn {
+  margin-top: -60px;
+  margin-left: 120px;
+  font-size: 50px;
+  display: none;
+}
 .dropdown.active {
   visibility: visible;
   opacity: 1;
@@ -265,8 +276,8 @@ button {
     display: none;
     position: absolute;
     top: 87px;
-    left: 0;
-    min-height: 50vh;
+    left: 160px;
+    min-height: 70vh;
     width: 50vw;
   }
 
@@ -434,7 +445,7 @@ h1 {
     padding: 10px 20px;
     font-weight: 600;
     border-radius: 12%;
-    margin-left: 115px;
+    margin-left: 106px;
   }
   p {
     margin-bottom: 40px;
@@ -454,13 +465,20 @@ h1 {
   }
   .image {
     display: flex;
-    gap: 20px;
-    width: 50%;
+    gap: 8px;
+    width: 20%;
     font-size: 5px;
+    margin-left: 15px;
     margin-bottom: 10px;
   }
   .image img {
     width: 190px;
     height: 20px;
+  }
+  .closebtn {
+    margin-top: -60px;
+    margin-left: 105px;
+    font-size: 50px;
+    display: inline;
   }
 }

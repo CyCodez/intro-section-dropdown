@@ -3,6 +3,7 @@ const dropdownBtn = document.querySelectorAll(".dropdown-btn");
 const dropdown = document.querySelectorAll(".dropdown");
 const hamburgerBtn = document.getElementById("hamburger");
 const navMenu = document.querySelector(".menu");
+const hide = document.querySelector(".hide");
 const links = document.querySelectorAll(".dropdown a");
 
 function setAriaExpandedFalse() {
@@ -19,7 +20,6 @@ function closeDropdownMenu() {
 function toggleHamburger() {
   navMenu.classList.toggle("show");
 }
-
 dropdownBtn.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     const dropdownIndex = e.currentTarget.dataset.dropdown;
@@ -63,3 +63,6 @@ document.addEventListener("keydown", (e) => {
 });
 
 hamburgerBtn.addEventListener("click", toggleHamburger);
+function closeNav() {
+  toggleHamburger();
+}
